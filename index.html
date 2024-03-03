@@ -31,16 +31,24 @@
         <section id="contact">
             <h2>Keress minket bátran:</h2>
             <!-- Add contact form and information -->
-            <form action="send_email.php" method="post">
-                <label for="name">Név:</label>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Üzenet:</label>
-                <textarea id="message" name="message" required></textarea><br>
-                <button type="submit">Küldés</button>
-            </form>            
-            <p>Telefonszám: 06-20-966-97-58</p>
+            <form action="mailto:tarsasek@proton.me" method="post" enctype="text/plain">
+                <table>
+                    <tr>
+                        <td><label>Neved:</label></td>
+                        <td><input type="text" name="yourName"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email címed:</label></td>
+                        <td><input type="email" name="yourEmail"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Üzeneted:</label></td>
+                    </tr>
+                </table>
+                <textarea name="name" id="" cols="30" rows="10"></textarea><br>
+                <input type="submit">
+            </form>       
+            <p>Telefonszám: 06209669758</p>
             <p>Cím: 1108 Budapest, Agyagfejtő utca 4. 6/26</p>
         </section>
     </main>
